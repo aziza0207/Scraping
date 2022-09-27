@@ -2,8 +2,6 @@ from datetime import date, timedelta
 import requests
 from bs4 import BeautifulSoup
 
-
-CSV = 'aziza.txt'
 URL = 'https://www.kijiji.ca/b-apartments-condos/city-of-toronto/c37l1700273'
 HEADERS = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,'
