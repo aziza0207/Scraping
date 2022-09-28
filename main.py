@@ -1,4 +1,5 @@
 from service import get_html, get_content, URL
+from database import data_base
 
 
 def parser():
@@ -12,6 +13,7 @@ def parser():
             html = get_html(f'https://www.kijiji.ca/b-apartments-condos/city-of-toronto/page-{page}/c37l1700273')
             ads.extend(get_content(html.text))
         print(ads)
+        data_base(ads)
     else:
         print("Error")
 
